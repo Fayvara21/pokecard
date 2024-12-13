@@ -1,0 +1,21 @@
+*{margin:0}
+html{
+  background-color:grey;
+}
+.main{
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height:100vh;
+}
+.container{
+ 
+}
+.card, .container{
+  width:calc(750px/2);
+  height: calc(1050px/2);
+  background-color:blue;
+}
+
+
