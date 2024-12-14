@@ -1,21 +1,51 @@
 *{margin:0}
 html{
   background-color:grey;
+  
 }
 .main{
-  background-color:white;
   display: flex;
   justify-content: center;
   align-items:center;
-  height:100vh;
+  background-color:black;
+  min-height: 90vh;
 }
-.container{
- 
+.card, .container, .image, .specular, .shine{
+  width:calc(750px/2.5);
+  height: calc(1050px/2.5);
+  border-radius:15px;
 }
-.card, .container{
-  width:calc(750px/2);
-  height: calc(1050px/2);
-  background-color:blue;
+
+/* ---- animations ---- */
+
+.card{
+  background-color:white;
+  transform: rotate3d(0,0,0,0deg);
+  transition-timing-function: ease-out;
+  transition-duration: 0.2s;
 }
+
+/* ---- mask ---- */
+
+.specular{
+/* background: linear-gradient(45deg, rgba(0,0,0,0.14593301435406703) 0%, rgba(0,255,251,0.29425837320574166) 41%, rgba(255,255,255,1) 57%, rgba(229,230,2,0.49521531100478466) 77%, rgba(0,0,0,0.14832535885167464) 100%); */
+
+background: linear-gradient(45deg, rgba(34,73,251,0.7655502392344498) 1%, rgba(0,0,0,0.5406698564593302) 66%); 
+
+background-size:150vw 150vh;
+mix-blend-mode: color-dodge;
+}
+.shine{
+background-image: url("../assets/stardust.png");
+mix-blend-mode: color-dodge;
+background-size: 200%;
+}
+.specular, .shine {
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+
 
 
