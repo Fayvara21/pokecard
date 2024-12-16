@@ -45,5 +45,5 @@ function tiltTransform(){
   bgposy = rect.height/2 ;
   bgposx = rect.width/2;
   card.style.transform = ` perspective(1000px) rotate3d(${-mousey},${mousex},0, ${ang}deg ) translate3d(0, 0, 20px) scale(1.1)`; 
-  specular.style.backgroundPosition= ` ${mousey-bgposy}px ${mousex-bgposx}px`
+  specular.style.backgroundPosition= ` ${mousey - rect.width }px ${mousex - (rect.height/2) }px`
 }

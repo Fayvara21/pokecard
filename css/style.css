@@ -33,15 +33,21 @@ html{
 /* ---- mask ---- */
 
 .specular{
-background: linear-gradient(45deg, rgba(0,0,0,0.14593301435406703) 0%, rgba(0,55,51,0.0425837320574166) 51%, rgba(255,255,255,0.7) 77%, rgba(229,230,2,0.29521531100478466) 87%, rgba(0,0,0,0.14832535885167464) 100%); 
+ background: linear-gradient(45deg, 
+rgba(0,0,0,0.14593301435406703) 0%, 
+rgba(0,55,51,0.0425837320574166) 31%, 
+rgba(255,255,255,0.60) 57%, 
+rgba(229,230,2,0.29521531100478466) 67%, 
+rgba(0,0,0,0.14832535885167464) 100%); 
 /* background-image: url('../assets/gradient.png'); */
 
-background-size:150vw 150vh;
+
+background-size:300% 200%;
 mix-blend-mode: multiply;
 }
 .shine{
 background-image: url("../assets/stardust.png");
-mix-blend-mode: color-dodge;
+mix-blend-mode: color-dodge; 
 background-size: 100%;
 }
 .specular, .shine {
